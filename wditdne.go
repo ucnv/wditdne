@@ -464,12 +464,16 @@ func (j *Jpeg) Extract(verbose bool) (string, error) {
 	if !verbose {
 		data = string(hidden) + "\n"
 	} else {
+		nblocks := 0
 		details = append(details, "\nQUANTIZATION TABLES:\n")
 		for _, c := range j.frame.components {
+			nblocks += c.h * c.v
 			q := j.quantizationTables[c.qtIdx]
 			details = append(details, fmt.Sprintf("%d\n", q.table))
 		}
 		data = strings.Join(details, "")
+		nblocks *= j.frame.ymcus * j.frame.xmcus
+		data += fmt.Sprintf("\nNUMBER OF BLOCKS:\n%d\n", nblocks)
 	}
 
 	return data, nil
