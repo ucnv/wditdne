@@ -1,0 +1,40 @@
+---
+---
+@import "primer";
+
+@import url("https://use.typekit.net/myg5mcd.css");
+@mixin fontA {
+  font-family: "minion-3", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+body {
+  background-color: #fefcf9;
+
+  .markdown-body {
+    padding-top: 2em;
+
+    a {
+      color: #05a;
+    }
+
+    h1, h2, h3, h4, li, p {
+      @include fontA;
+    }
+
+    h1, h2, h3, h4 {
+      font-weight: 700;
+      border-bottom: none;
+    }
+
+    h1 {
+      font-size: 20px;
+    }
+
+    .site-title {
+      padding-top: 1em;
+      text-align: center;
+    }
+  }
+}
