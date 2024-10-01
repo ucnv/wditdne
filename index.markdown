@@ -7,5 +7,5 @@ layout: default
 ---
 # JPEGのイデオロギーを利用したステガノグラフィー<br>Steganography Utilizing the Ideology of JPEG 
 
-- [Manuscript](assets/manuscript-ja.pdf)
+- [Manuscript](assets/manuscript.pdf)
 - [Implimentation](https://github.com/ucnv/wditdne/)
