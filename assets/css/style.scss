@@ -9,19 +9,22 @@
   font-style: normal;
 }
 
+$color-text: #000;
+$color-link: #05b;
+$color-bg: #fefcf9;
+
 body {
-  background-color: #fefcf9;
+  background-color: $color-bg;
 
   .markdown-body {
+    position: relative;
     padding-top: 2em;
     font-size: 18px;
+    @include fontA;
+    color: $color-text;
 
     a {
-      color: #05a;
-    }
-
-    h1, h2, h3, h4, li, p {
-      @include fontA;
+      color: $color-link;
     }
 
     h1, h2, h3, h4 {
@@ -32,10 +35,20 @@ body {
     h1 {
       font-size: 23px;
     }
+  }
 
-    .site-title {
-      padding-top: 1em;
-      text-align: center;
+  footer.site-title {
+    @include fontA;
+    font-size: 18px;
+    position: fixed;
+    bottom: 3.5em;
+    left: 0;
+    right: 0;
+    margin-top: 3em;
+    text-align: center;
+
+    a {
+      color: $color-text;
     }
   }
 }

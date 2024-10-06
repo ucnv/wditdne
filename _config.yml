@@ -18,16 +18,15 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
-title: We Decided Invisible Things Do Not Exist
+title: WDITDNE
 email: ucnvvv@gmail.com
 description: >-
-  Proposing a novel method of the steganography into JPEG. 
-  It utilizes the ideology of JPEG to hide information 
-  behind this commonly used image format.
+  Proposing a novel method of the steganography that hides information behind the ideology of JPEG.
 baseurl: ""
 url: "https://wditdne.ucnv.org"
 twitter_username: ucnv
 github_username:  ucnv
+lang: ja_JP
 
 # Build settings
 #theme: minima
